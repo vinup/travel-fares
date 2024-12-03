@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ltlpay.travel_fares.TravelFaresApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-03T14:35:39" hostname="Vinups-MBP" time="0.816">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.ltlpay.travel_fares.TravelFaresApplicationTests" time="0.816"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+01:35:34.187 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ltlpay.travel_fares.TravelFaresApplicationTests]: TravelFaresApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:35:34.312 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.TravelFaresApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2024-12-04T01:35:34.849+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Starting TravelFaresApplicationTests using Java 17.0.13 with PID 69000 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
+2024-12-04T01:35:34.851+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-12-04T01:35:35.458+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04T01:35:35.567+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
+2024-12-04T01:35:36.324+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-04T01:35:36.488+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-04T01:35:36.492+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-04T01:35:36.741+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04T01:35:36.786+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-04T01:35:36.832+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-04T01:35:37.099+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04T01:35:37.142+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-04T01:35:37.199+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-04T01:35:38.057+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04T01:35:38.093+11:00  INFO 69000 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04T01:35:38.521+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-04T01:35:39.977+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Started TravelFaresApplicationTests in 5.511 seconds (process running for 6.993)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

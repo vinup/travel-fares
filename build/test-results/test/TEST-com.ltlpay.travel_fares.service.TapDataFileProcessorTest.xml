@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-03T14:35:42" hostname="Vinups-MBP" time="0.696">
+  <properties/>
+  <testcase name="processTapDataFile()" classname="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" time="0.644"/>
+  <testcase name="processTapDataList()" classname="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" time="0.045"/>
+  <system-out><![CDATA[2024-12-04T01:35:40.913+11:00  INFO 69000 --- [travel-fares] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ltlpay.travel_fares.service.TapDataFileProcessorTest]: TapDataFileProcessorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04T01:35:41.022+11:00  INFO 69000 --- [travel-fares] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.service.TapDataFileProcessorTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2024-12-04T01:35:41.126+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Starting TapDataFileProcessorTest using Java 17.0.13 with PID 69000 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
+2024-12-04T01:35:41.127+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : The following 1 profile is active: "test"
+2024-12-04T01:35:41.511+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04T01:35:41.555+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2024-12-04T01:35:41.727+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04T01:35:41.737+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-04T01:35:41.765+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04T01:35:41.769+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-04T01:35:41.775+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+2024-12-04T01:35:41.776+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-04T01:35:41.787+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-04T01:35:41.789+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-04T01:35:41.792+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-04T01:35:41.942+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04T01:35:42.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04T01:35:42.415+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Started TapDataFileProcessorTest in 1.376 seconds (process running for 9.431)
+2024-12-04T01:35:42.669+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=3, stopId=103, tapTime=2023-01-22T09:20, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus36, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:42.994+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1, stopId=101, tapTime=2023-01-22T13:00, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:43.010+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : sourceStopId: 101 destinationStopId: 102
+2024-12-04T01:35:43.025+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=2, stopId=102, tapTime=2023-01-22T13:05, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:43.026+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 2 has already been mapped to a trip
+2024-12-04T01:35:43.027+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=4, stopId=101, tapTime=2023-01-23T08:00, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:43.039+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=5, stopId=101, tapTime=2023-01-23T08:02, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:43.041+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 5 has already been mapped to a trip
+2024-12-04T01:35:43.042+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=6, stopId=102, tapTime=2023-01-24T16:30, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T01:35:43.053+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T09:20, finished=null, fromStopId=103, toStopId=null, chargeAmount=15.75, companyId=Company1, busId=Bus36, pan=4111111111111111, status=INCOMPLETE) 
+2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-23T08:00, finished=2023-01-23T08:02, fromStopId=101, toStopId=101, chargeAmount=0.0, companyId=Company1, busId=Bus37, pan=4111111111111111, status=CANCELLED) 
+2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:00, finished=2023-01-22T13:05, fromStopId=101, toStopId=102, chargeAmount=5.00, companyId=Company1, busId=Bus37, pan=5500005555555559, status=COMPLETED) 
+2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-24T16:30, finished=2023-01-24T16:30, fromStopId=null, toStopId=102, chargeAmount=10.25, companyId=Company1, busId=Bus37, pan=5500005555555559, status=INCOMPLETE) 
+2024-12-04T01:35:43.091+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1111, stopId=101, tapTime=2023-01-22T13:00, tapType=ON, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
+2024-12-04T01:35:43.096+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : sourceStopId: 101 destinationStopId: 201
+2024-12-04T01:35:43.099+11:00 ERROR 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : Fare not found for sourceStop: 101 and destinationStop: 201
+2024-12-04T01:35:43.106+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1112, stopId=201, tapTime=2023-01-22T13:05, tapType=OFF, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
+2024-12-04T01:35:43.107+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 1112 has already been mapped to a trip
+2024-12-04T01:35:43.108+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1113, stopId=102, tapTime=2023-01-22T13:06, tapType=OFF, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
+2024-12-04T01:35:43.111+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1114, stopId=103, tapTime=2023-01-22T13:08, tapType=ON, tapDataFileId=2222, pan=5111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
+2024-12-04T01:35:43.121+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:00, finished=2023-01-22T13:05, fromStopId=101, toStopId=201, chargeAmount=0, companyId=null, busId=bus1, pan=4111111111111111, status=COMPLETED) 
+2024-12-04T01:35:43.122+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:06, finished=2023-01-22T13:06, fromStopId=null, toStopId=102, chargeAmount=10.25, companyId=null, busId=bus1, pan=4111111111111111, status=INCOMPLETE) 
+2024-12-04T01:35:43.122+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:08, finished=null, fromStopId=103, toStopId=null, chargeAmount=15.75, companyId=null, busId=bus1, pan=5111111111111111, status=INCOMPLETE) 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
