@@ -20,3 +20,8 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+/.gradle/
+/build/
+/.idea/
+/f691cd95-bfa7-4a9a-bde8-af6625dab753.csv
+/build/

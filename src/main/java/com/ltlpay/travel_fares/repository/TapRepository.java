@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.math.BigInteger;
 import java.util.Optional;
+
 @Repository
 public interface TapRepository extends JpaRepository<Tap, BigInteger> {
 

@@ -29,7 +29,7 @@ public class FareServiceImpl {
                 return BigDecimal.ZERO;
             }
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e.getMessage());
         }
 
     }

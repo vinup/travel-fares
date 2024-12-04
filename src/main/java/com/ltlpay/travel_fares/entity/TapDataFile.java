@@ -18,7 +18,7 @@ public class TapDataFile {
     @Id
     @Generated
     private String fileId;
-    private String  fileName;
+    private String fileName;
     private LocalDateTime processedTime;
     private String status;
 }

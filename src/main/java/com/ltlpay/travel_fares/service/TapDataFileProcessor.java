@@ -1,24 +1,13 @@
 package com.ltlpay.travel_fares.service;
 
-import com.ltlpay.travel_fares.domain.RawTap;
 import com.ltlpay.travel_fares.entity.Tap;
 import com.ltlpay.travel_fares.entity.TapType;
 import com.ltlpay.travel_fares.entity.Trip;
-import com.ltlpay.travel_fares.entity.TripType;
 import com.ltlpay.travel_fares.repository.TapRepository;
-import com.ltlpay.travel_fares.repository.TripRepository;
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.FileReader;
-import java.io.Reader;
-import java.math.BigInteger;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Service
@@ -29,38 +18,14 @@ public class TapDataFileProcessor {
     TapRepository tapRepository;
     @Autowired
     TripService tripService;
+    @Autowired
+    CSVFileHandler csvFileHandler;
 
-    protected void processTapDataFile(String filePath) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+    public void processTapDataFile(String filePath) throws Exception {
         String tapDataFileId = UUID.randomUUID().toString();
-        List<Tap> tapList = new ArrayList<>();
-        try (Reader reader = new FileReader(filePath)) {
-            CsvToBean<RawTap> csvToBean = new CsvToBeanBuilder<RawTap>(reader)
-                    .withType(RawTap.class)
-                    .withIgnoreLeadingWhiteSpace(true)
-                    .build();
-
-            List<RawTap> rawTaps = csvToBean.parse();
-            for (RawTap rawTap : rawTaps) {
-                Tap tap = Tap.builder()
-                        .pan(rawTap.getPan())
-                        .tapDataFileId(tapDataFileId)
-                        .tapId(rawTap.getTapId())
-                        .tapType(TapType.valueOf(rawTap.getTapType()))
-                        .tapTime(LocalDateTime.parse(rawTap.getTapTime(), formatter))
-                        .companyId(rawTap.getCompanyId())
-                        .busId(rawTap.getBusId())
-                        .stopId(rawTap.getStopId())
-                        .isMappedToTrip(Boolean.FALSE)
-                        .build();
-                tapList.add(tap);
-            }
-        } catch (Exception e) {
-            log.error("Unable to process file {}", filePath, e);
-        }
-
+        List<Tap> tapList = csvFileHandler.readFromInputFile(filePath, tapDataFileId);
         List<Trip> processedTrips = processTaps(tapList);
-        logTrips(processedTrips);
+        csvFileHandler.writeToOutputFile(processedTrips, tapDataFileId + ".csv");
     }
 
 

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-03T14:35:42" hostname="Vinups-MBP" time="0.696">
+<testsuite name="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-04T05:48:09" hostname="Vinups-MBP" time="0.521">
   <properties/>
-  <testcase name="processTapDataFile()" classname="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" time="0.644"/>
-  <testcase name="processTapDataList()" classname="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" time="0.045"/>
-  <system-out><![CDATA[2024-12-04T01:35:40.913+11:00  INFO 69000 --- [travel-fares] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ltlpay.travel_fares.service.TapDataFileProcessorTest]: TapDataFileProcessorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-12-04T01:35:41.022+11:00  INFO 69000 --- [travel-fares] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.service.TapDataFileProcessorTest
+  <testcase name="processTapDataFile()" classname="com.ltlpay.travel_fares.service.TapDataFileProcessorTest" time="0.521"/>
+  <system-out><![CDATA[2024-12-04T16:48:08.613+11:00  INFO 73232 --- [travel-fares] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ltlpay.travel_fares.service.TapDataFileProcessorTest]: TapDataFileProcessorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-04T16:48:08.667+11:00  INFO 73232 --- [travel-fares] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.service.TapDataFileProcessorTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -15,19 +14,19 @@
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-04T01:35:41.126+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Starting TapDataFileProcessorTest using Java 17.0.13 with PID 69000 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
-2024-12-04T01:35:41.127+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : The following 1 profile is active: "test"
-2024-12-04T01:35:41.511+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-04T01:35:41.555+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
-2024-12-04T01:35:41.727+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-04T01:35:41.737+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-04T01:35:41.765+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-04T01:35:41.769+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-12-04T01:35:41.775+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
-2024-12-04T01:35:41.776+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-12-04T01:35:41.787+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2024-12-04T01:35:41.789+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-12-04T01:35:41.792+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-12-04T16:48:08.840+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Starting TapDataFileProcessorTest using Java 17.0.13 with PID 73232 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
+2024-12-04T16:48:08.842+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : The following 1 profile is active: "test"
+2024-12-04T16:48:09.165+11:00  INFO 73232 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04T16:48:09.203+11:00  INFO 73232 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2024-12-04T16:48:09.393+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04T16:48:09.402+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-04T16:48:09.430+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04T16:48:09.433+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-04T16:48:09.437+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:test user=SA
+2024-12-04T16:48:09.438+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-04T16:48:09.439+11:00  WARN 73232 --- [travel-fares] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-04T16:48:09.440+11:00  WARN 73232 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-04T16:48:09.442+11:00  INFO 73232 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -35,32 +34,109 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-04T01:35:41.942+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-04T01:35:42.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-04T01:35:42.415+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Started TapDataFileProcessorTest in 1.376 seconds (process running for 9.431)
-2024-12-04T01:35:42.669+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=3, stopId=103, tapTime=2023-01-22T09:20, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus36, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:42.994+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1, stopId=101, tapTime=2023-01-22T13:00, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:43.010+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : sourceStopId: 101 destinationStopId: 102
-2024-12-04T01:35:43.025+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=2, stopId=102, tapTime=2023-01-22T13:05, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:43.026+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 2 has already been mapped to a trip
-2024-12-04T01:35:43.027+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=4, stopId=101, tapTime=2023-01-23T08:00, tapType=ON, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus37, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:43.039+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=5, stopId=101, tapTime=2023-01-23T08:02, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=4111111111111111, busId=Bus37, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:43.041+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 5 has already been mapped to a trip
-2024-12-04T01:35:43.042+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=6, stopId=102, tapTime=2023-01-24T16:30, tapType=OFF, tapDataFileId=6165f92b-da17-4b42-8e5b-e4eb9ae022ca, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
-2024-12-04T01:35:43.053+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T09:20, finished=null, fromStopId=103, toStopId=null, chargeAmount=15.75, companyId=Company1, busId=Bus36, pan=4111111111111111, status=INCOMPLETE) 
-2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-23T08:00, finished=2023-01-23T08:02, fromStopId=101, toStopId=101, chargeAmount=0.0, companyId=Company1, busId=Bus37, pan=4111111111111111, status=CANCELLED) 
-2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:00, finished=2023-01-22T13:05, fromStopId=101, toStopId=102, chargeAmount=5.00, companyId=Company1, busId=Bus37, pan=5500005555555559, status=COMPLETED) 
-2024-12-04T01:35:43.054+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-24T16:30, finished=2023-01-24T16:30, fromStopId=null, toStopId=102, chargeAmount=10.25, companyId=Company1, busId=Bus37, pan=5500005555555559, status=INCOMPLETE) 
-2024-12-04T01:35:43.091+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1111, stopId=101, tapTime=2023-01-22T13:00, tapType=ON, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
-2024-12-04T01:35:43.096+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : sourceStopId: 101 destinationStopId: 201
-2024-12-04T01:35:43.099+11:00 ERROR 69000 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : Fare not found for sourceStop: 101 and destinationStop: 201
-2024-12-04T01:35:43.106+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1112, stopId=201, tapTime=2023-01-22T13:05, tapType=OFF, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
-2024-12-04T01:35:43.107+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : tap: 1112 has already been mapped to a trip
-2024-12-04T01:35:43.108+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1113, stopId=102, tapTime=2023-01-22T13:06, tapType=OFF, tapDataFileId=2222, pan=4111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
-2024-12-04T01:35:43.111+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1114, stopId=103, tapTime=2023-01-22T13:08, tapType=ON, tapDataFileId=2222, pan=5111111111111111, busId=bus1, companyId=null, isMappedToTrip=false)
-2024-12-04T01:35:43.121+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:00, finished=2023-01-22T13:05, fromStopId=101, toStopId=201, chargeAmount=0, companyId=null, busId=bus1, pan=4111111111111111, status=COMPLETED) 
-2024-12-04T01:35:43.122+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:06, finished=2023-01-22T13:06, fromStopId=null, toStopId=102, chargeAmount=10.25, companyId=null, busId=bus1, pan=4111111111111111, status=INCOMPLETE) 
-2024-12-04T01:35:43.122+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Trip: Trip(started=2023-01-22T13:08, finished=null, fromStopId=103, toStopId=null, chargeAmount=15.75, companyId=null, busId=bus1, pan=5111111111111111, status=INCOMPLETE) 
+2024-12-04T16:48:09.615+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04T16:48:09.631+11:00  INFO 73232 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04T16:48:09.895+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessorTest   : Started TapDataFileProcessorTest in 1.211 seconds (process running for 8.607)
+2024-12-04T16:48:09.897+11:00 ERROR 73232 --- [travel-fares] [    Test worker] c.l.travel_fares.TravelFaresApplication  : No inputfile provided!
+2024-12-04T16:48:10.247+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=3, stopId=103, tapTime=2023-01-22T09:20, tapType=ON, tapDataFileId=dc36d66b-565f-47f7-939f-5c88a580d614, pan=4111111111111111, busId=Bus36, companyId=Company1, isMappedToTrip=false)
+2024-12-04T16:48:10.381+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Processing tap Tap(tapId=1, stopId=101, tapTime=2023-01-22T13:00, tapType=ON, tapDataFileId=dc36d66b-565f-47f7-939f-5c88a580d614, pan=5500005555555559, busId=Bus37, companyId=Company1, isMappedToTrip=false)
+2024-12-04T16:48:10.389+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.service.FareServiceImpl            : sourceStopId: 101 destinationStopId: 102
+2024-12-04T16:48:10.399+11:00 ERROR 73232 --- [travel-fares] [    Test worker] c.l.t.service.TapDataFileProcessor       : Unable to process taps
+
+java.lang.RuntimeException: Query did not return a unique result: 2 results were returned
+	at com.ltlpay.travel_fares.service.FareServiceImpl.calculateFare(FareServiceImpl.java:32) ~[main/:na]
+	at com.ltlpay.travel_fares.service.TripServiceImpl.createCompletedTrip(TripServiceImpl.java:61) ~[main/:na]
+	at com.ltlpay.travel_fares.service.TripServiceImpl.createTripFromTheTaps(TripServiceImpl.java:35) ~[main/:na]
+	at com.ltlpay.travel_fares.service.TapDataFileProcessor.processTaps(TapDataFileProcessor.java:63) ~[main/:na]
+	at com.ltlpay.travel_fares.service.TapDataFileProcessor.processTapDataFile(TapDataFileProcessor.java:38) ~[main/:na]
+	at com.ltlpay.travel_fares.service.TapDataFileProcessorTest.processTapDataFile(TapDataFileProcessorTest.java:35) ~[test/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767) ~[junit-platform-commons-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.11.3.jar:5.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.11.3.jar:1.11.3]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-12-04T16:48:10.411+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.travel_fares.service.CSVFileHandler  : Trips written to dc36d66b-565f-47f7-939f-5c88a580d614.csv
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

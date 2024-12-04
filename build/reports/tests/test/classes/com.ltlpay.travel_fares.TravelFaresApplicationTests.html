@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.816s</div>
+<div class="counter">0.726s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.816s</td>
+<td class="success">0.726s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -88,8 +88,8 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
-01:35:34.187 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ltlpay.travel_fares.TravelFaresApplicationTests]: TravelFaresApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-01:35:34.312 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.TravelFaresApplicationTests
+16:48:02.362 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ltlpay.travel_fares.TravelFaresApplicationTests]: TravelFaresApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:48:02.500 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ltlpay.travel_fares.TravelFaresApplication for test class com.ltlpay.travel_fares.TravelFaresApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -100,19 +100,20 @@
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-04T01:35:34.849+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Starting TravelFaresApplicationTests using Java 17.0.13 with PID 69000 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
-2024-12-04T01:35:34.851+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-12-04T01:35:35.458+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-04T01:35:35.567+11:00  INFO 69000 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 3 JPA repository interfaces.
-2024-12-04T01:35:36.324+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-04T01:35:36.488+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-12-04T01:35:36.492+11:00  INFO 69000 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-04T01:35:36.741+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-04T01:35:36.786+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-12-04T01:35:36.832+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-04T01:35:37.099+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-04T01:35:37.142+11:00  WARN 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-12-04T01:35:37.199+11:00  INFO 69000 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-12-04T16:48:03.044+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Starting TravelFaresApplicationTests using Java 17.0.13 with PID 73232 (started by vinupmanukonda in /Users/vinupmanukonda/Documents/repositories/travel-fares)
+2024-12-04T16:48:03.045+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-12-04T16:48:03.582+11:00  INFO 73232 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04T16:48:03.677+11:00  INFO 73232 --- [travel-fares] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+2024-12-04T16:48:04.359+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04T16:48:04.406+11:00  INFO 73232 --- [travel-fares] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-04T16:48:04.453+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-04T16:48:04.707+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04T16:48:04.742+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-04T16:48:04.874+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2024-12-04T16:48:04.876+11:00  INFO 73232 --- [travel-fares] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-04T16:48:04.917+11:00  WARN 73232 --- [travel-fares] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-04T16:48:04.920+11:00  WARN 73232 --- [travel-fares] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-04T16:48:04.937+11:00  INFO 73232 --- [travel-fares] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -120,10 +121,11 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-04T01:35:38.057+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-04T01:35:38.093+11:00  INFO 69000 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-04T01:35:38.521+11:00  INFO 69000 --- [travel-fares] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-12-04T01:35:39.977+11:00  INFO 69000 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Started TravelFaresApplicationTests in 5.511 seconds (process running for 6.993)
+2024-12-04T16:48:05.798+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04T16:48:05.863+11:00  INFO 73232 --- [travel-fares] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04T16:48:06.276+11:00  INFO 73232 --- [travel-fares] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-04T16:48:06.993+11:00  INFO 73232 --- [travel-fares] [    Test worker] c.l.t.TravelFaresApplicationTests        : Started TravelFaresApplicationTests in 4.346 seconds (process running for 5.705)
+2024-12-04T16:48:06.998+11:00 ERROR 73232 --- [travel-fares] [    Test worker] c.l.travel_fares.TravelFaresApplication  : No inputfile provided!
 </pre>
 </span>
 </div>
@@ -135,7 +137,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 1:35:43 am</p>
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 4 Dec 2024, 4:48:11 pm</p>
 </div>
 </div>
 </body>

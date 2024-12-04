@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.ltlpay'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 
 java {
     toolchain {
@@ -25,7 +25,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'com.opencsv:opencsv:5.7.1'
 
-    testImplementation 'com.h2database:h2'
+    implementation 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.mockito:mockito-core:5.14.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

@@ -5,11 +5,9 @@ public enum TripType {
     INCOMPLETE("INCOMPLETE"),
     CANCELLED("CANCELLED");
     private String value;
+
     private TripType(String value) {
         this.value = value;
-    }
-    public String getValue() {
-        return value;
     }
 
     public static TripType fromString(String value) {
@@ -19,5 +17,9 @@ public enum TripType {
             }
         }
         throw new IllegalArgumentException("Unknown TripType: " + value);
+    }
+
+    public String getValue() {
+        return value;
     }
 }

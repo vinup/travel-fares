@@ -9,12 +9,6 @@ public enum TapType {
         this.description = description;
     }
 
-
-    public String getDescription() {
-        return description;
-    }
-
-
     public static TapType fromString(String value) {
         for (TapType tapType : TapType.values()) {
             if (tapType.name().equalsIgnoreCase(value)) {
@@ -22,6 +16,10 @@ public enum TapType {
             }
         }
         throw new IllegalArgumentException("Unknown TapType: " + value);
+    }
+
+    public String getDescription() {
+        return description;
     }
 
 
